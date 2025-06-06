@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ucapan Ulang Tahun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #1e1e1e;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+            text-align: center;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff69b4;
+            border-top: 3px solid #ff69b4;
+            border-bottom: 3px solid #ff69b4;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .emoji {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        strong {
+            color: #ffb6c1;
+        }
+        span {
+            color: #f06292;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #ff69b4;
+            margin-bottom: 20px;
+            border-radius: 0; /* Kotak */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img id="foto" src="https://files.catbox.moe/wvxi6z.jpg" alt="Foto Ulang Tahun" />
+    <div class="title">happy Birthday, <span id="namaTarget">[Nama]</span> Sayang</div>
+
+    <p>Hai <span id="namaTarget2">[Nama]</span>, hari ini hari ultah kamu.</p>
+
+    <p><strong>di baca ya mela sayang
+     </strong></p>
+    <p>happy birthday, semoga segala hal baik dateng ke kamu termasuk aku setiap hari dengan versi yang makin sayang.</p>
+
+    <p>ulang tahun kamu tuh kayak alarm kecil yang ngingetin aku, betapa bersyukurnya aku pernah ketemu kamu, dan bisa nyebut kamu punya aku ea.</p>
+
+    <p>ulang tahun tuh bukan tentang tambah umur doang, tapi tentang seberapa jauh kamu udah bertahan. Selamat ya, kamu hebat.</p>
+
+    <p>nikmati hari spesial ini, dan jangan lupa senyum anjaiii.</p>
+
+    <div class="emoji">🤭🤭🤭</div>
+</div>
+
+<script>
+    const nama = prompt("Masukkan nama:");
+    document.getElementById("namaTarget").textContent = nama;
+    document.getElementById("namaTarget2").textContent = nama;
+</script>
+
+</body>
+</html>
